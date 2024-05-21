@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción - Escuela San Jorge</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <a id="top"></a>
+    <div class="arriba"><a href="#top" class="arriba">Ir arriba</a></div>
+    <main>
+        <section class="banner-admision">
+            <a class="inicio" href="Index.html" target="_self">VOLVER A INICIO</a><br>
+            <h1>FORMULARIO DE ADMISIÓN</h1>
+            
+
+        </section>
+        <h2 id="titulo-paginas-hijas">Escuela San Jorge</h2>
+        <section class="form-admisiones">
+            <h2>Ciclo Lectivo 2025</h2>
+            <p><strong>* Indica que el campo es obligatorio</strong></p>
+            <div class="contact-form" id="form-admi">
+                <form action="#" method="get" autocomplete="on" onsubmit="return validarFormulario()">
+                    <fieldset>
+                        <legend><strong>Datos del Aspirante</strong></legend>
+                        <label for="lnamea">Apellido del aspirante*:</label><br>
+                        <input type="text" id="lnamea" name="lnamea"><br>
+                        <label for="fnamea">Nombre del aspirante*:</label><br>
+                        <input type="text" id="fnamea" name="fnamea"><br>
+                        <label for="birthdate">Fecha de nacimiento*:</label><br>
+                        <input type="date" name="birthdate" id="birthdate"><br>
+                        <label for="level">Nivel al que quiere ingresar*:</label><br>
+                        <select class="form-select" name="level" id="level">
+                            <option value="">Elija una opción</option>
+                            <option value="nivelprimario">Nivel Primario</option>
+                            <option value="nivelsecundario">Nivel Secundario</option>
+                        </select><br>
+                        <label for="grade">Grado/Año*:</label><br>
+                        <select class="form-select" name="grade" id="grade">
+                            <option value="">Elija una opción</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <p>¿Tiene hermanos en la Escuela San Jorge?*</p>
+                        <div class="radio-form">
+                            <div>
+                                <input type="radio" name="hno" id="yes-hno">
+                                <label for="yes-hno">Si</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" name="hno" id="no-hno">
+                                <label for="no-hno">No</label><br>
+                            </div>
+                        </div>
+                        <p>¿Es hijo de exalumno de la Escuela San Jorge?*</p>
+                        <div class="radio-form">
+                            <div>
+                                <input type="radio" name="ex" id="yes-ex">
+                                <label for="yes-ex">Si</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" name="ex" id="no-ex">
+                                <label for="no-ex">No</label><br>
+                            </div>
+                        </div><br><br>
+                        <label for="school">Colegio de procedencia*:</label><br>
+                        <input type="text" id="school" name="school">
+                    </fieldset><br>
+                    <fieldset>
+                        <legend><strong>Datos del contacto (padre/madre/tutor)</strong></legend>
+                        <label for="lnamec">Apellido del contacto*:</label><br>
+                        <input type="text" id="lnamec" name="lnamec"><br>
+                        <label for="fnamec">Nombre del contacto*:</label><br>
+                        <input type="text" id="fnamec" name="fnamec"><br>
+                        <label for="emailc">Correo electrónico*:</label><br>
+                        <input type="email" name="emailc" id="emailc"><br>
+                        <label for="phonec">Teléfono (opcional):</label><br>
+                        <input type="tel" name="phonec" id="phonec" pattern="[0-9]{10}"><br>
+
+                    </fieldset><br>
+                    <input class="submit-button-contact" type="submit" value="Enviar">
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p><b>Este sitio constituye el trabajo práctico del grupo 1, comisión 24187 correspondiente al curso fullstack
+                web en
+                python, del
+                programa
+                Codo a Codo.</b></p>
+        <p><b>Autores: Victoria Vázquez Freire, Gonzalo Talavera y Edgardo Emiliano Acosta Villegas.</b></p>
+        <p><b>Argentina 2024</b></p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

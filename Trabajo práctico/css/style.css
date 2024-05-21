@@ -1,0 +1,666 @@
+:root {
+    --text-shadow: rgb(9, 9, 14) 3px 5px 5px;
+    --color-bg1: rgb(208, 222, 235);
+    --color-bg2: rgb(170, 207, 207);
+    --color-bg3: rgb(168, 168, 168);
+    --border-color: solid rgb(29, 8, 105);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Fuente descargada de google fonts*/
+@font-face {
+    font-family: GreatVibes;
+    src: url(GreatVibes-Regular.ttf);
+}
+
+* {
+    text-align: center;
+}
+
+header,
+#titulo-paginas-hijas {
+    font-size: 4rem;
+    background-color: rgb(177, 176, 189);
+    margin-bottom: 20px;
+    border: 5px var(--border-color);
+}
+
+#titulo,
+#titulo-paginas-hijas {
+    font-family: GreatVibes, cursive;
+    color: rgb(20, 20, 100);
+    text-shadow: var(--text-shadow);
+    margin-left: 5%;
+}
+
+#titulo-paginas-hijas {
+    margin-left: 0;
+}
+
+@keyframes animacion {
+    0% {
+        border-color: blue;
+    }
+
+    50% {
+        border-color: red;
+    }
+
+    100% {
+        border-color: gold;
+    }
+
+
+}
+
+header>img {
+    width: 10%;
+    height: 10%;
+    border: 4px solid violet;
+    border-radius: 9px;
+    margin: 5%;
+    animation: animacion 1.5s linear 0s infinite normal forwards;
+
+}
+
+h2,
+h3,
+h4,
+h5,
+#ins,
+.banner-admision>H1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h2,
+#ins,
+.banner-admision>H1 {
+    font-size: 3rem;
+    color: rgb(55, 38, 153);
+    text-shadow: var(--text-shadow);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h3,
+h4,
+h5 {
+    text-decoration: underline;
+}
+
+p,
+figcaption,
+li {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+
+
+
+nav>div,
+li>a,
+.arriba,
+section>a,
+.submit-button-contact {
+    border-radius: 9px;
+    border: 4px ridge black;
+    background-color: rgb(71, 34, 34);
+    text-shadow: var(--text-shadow)
+}
+
+a {
+    color: rgb(236, 234, 232);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@keyframes arriba {
+    0% {
+        display: none;
+    }
+
+    50% {
+        display: none;
+    }
+
+    /*Esta regla, junto a la propiedad animation en ".arriba", evitan el parpadeo del boton "ir arriba", que se produce
+    cuando se carga o recarga la pagina, debido al tiempo que le lleva a javascript ocultar el boton.*/
+}
+
+.arriba {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    animation: arriba 0.1s linear 0s 1 normal none;
+}
+
+nav>div:hover,
+a:hover,
+.arriba:hover {
+    background-color: rgb(85, 32, 58);
+}
+
+#escuela {
+    padding: 10%;
+    background-color: var(--color-bg1)
+}
+
+#escuela>img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    border: 5px var(--border-color);
+    border-radius: 9px;
+
+}
+
+.oferta {
+    display: grid;
+    background-color: var(--color-bg2);
+    padding-bottom: 5%;
+}
+
+.institucional {
+    background-color: var(--color-bg1);
+    padding: 10%;
+}
+
+.autoridades>div,
+#historia {
+    background-color: var(--color-bg3);
+}
+
+.autoridad {
+    max-width: 200px;
+    border: 3px var(--border-color);
+}
+
+#historia {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    border: 3px var(--border-color);
+    margin-top: 5%;
+}
+
+.fotoHistoria {
+    max-width: 200px;
+    border: 3px var(--border-color);
+}
+
+aside {
+    background-color: var(--color-bg2);
+
+}
+
+
+#nov {
+    border: 4px var(--border-color);
+    animation: animacion 1.5s linear 0s infinite normal forwards;
+}
+
+ul {
+    padding: 5%;
+}
+
+ul {
+    margin: 2%;
+    line-height: 2;
+    list-style-type:disc;
+    border: 2px var(--border-color);
+    background-color: var(--color-bg1);
+
+}
+
+iframe {
+    background-color: white;
+    border: 3px var(--border-color);
+}
+
+footer {
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+
+
+.banner-admision {
+    background-image: url("../img/pexels-emily-ranquist-493228-1205651.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10%;
+    opacity: 0.7;
+}
+
+.intro-admisiones>div:nth-child(1n) {
+    background-color: var(--color-bg1);
+    padding: 5% 10%;
+}
+
+.intro-admisiones>div:nth-child(2) {
+    background-color: var(--color-bg2);
+    padding: 5% 2%;
+}
+
+.intro-admisiones ol {
+    list-style-position: outside;
+    border-left: 4px solid rgb(120, 120, 120);
+
+    padding: 10px 30px;
+}
+
+
+.intro-admisiones ol li {
+    padding: 4px;
+    text-align: justify;
+
+}
+
+.intro-admisiones ul {
+    list-style-type: square;
+    list-style-position: outside;
+    border-left: 4px solid rgb(120, 120, 120);
+
+    padding: 10px 30px;
+}
+
+.intro-admisiones ul li {
+    padding: 4px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+
+fieldset {
+    background-color: var(--color-bg3);
+}
+
+#form-admi legend {
+    background-color: rgb(120, 120, 120);
+    color: #fff;
+    padding: 3px 6px;
+    box-shadow: 0 0 0 5px #ddd;
+}
+
+#form-admi fieldset {
+    padding: 10px 10px;
+    margin: 4px;
+    border: 2px solid rgb(120, 120, 120);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#form-admi {
+    padding: 5px;
+}
+
+#form-admi input select {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#form-admi label {
+    font-weight: bold;
+}
+
+.radio-form input[type=radio] {
+
+    accent-color: black;
+    float: left;
+    margin: 1px;
+}
+
+
+.radio-form {
+    width: 20%;
+    padding: 2px 0px 2px 0px;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.radio-form label {
+    float: left;
+}
+
+
+.form-admisiones h2 {
+    text-align: center;
+    color: black;
+    position: relative;
+    top: 15%;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.submit-button-contact {
+    background-color: rgb(120, 120, 120);
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    margin: 4px 2px;
+    border-color: rgb(120, 120, 120);
+    border: solid;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.submit-button-contact:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.6;
+}
+
+.form-admisiones {
+    background-color: var(--color-bg2);
+    padding: 5% 0;
+}
+
+.map {
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.map iframe {
+    width: 50%;
+}
+
+.contact-data ul {
+    font-style: italic;
+    list-style-type: none;
+    border-left: 5px solid rgb(120, 120, 120);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.contact-data ul li {
+    padding: 5px;
+}
+
+.contact-form input {
+    width: 50%;
+    padding: 6px 10px;
+    margin: 4px;
+    border-color: rgb(120, 120, 120);
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.contact-form input[type=text]:focus-visible {
+    border: 3px solid rgb(120, 120, 120);
+    background-color: whitesmoke;
+}
+
+.contact-form textarea {
+    width: 50%;
+    padding: 6px 10px;
+    margin: 4px;
+    border-color: rgb(120, 120, 120);
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+}
+
+.contact-form textarea:focus-visible {
+    border: 3px solid rgb(120, 120, 120);
+    background-color: whitesmoke;
+}
+
+.contact-form select {
+    width: 50%;
+    padding: 6px 10px;
+    margin: 4px;
+    border-color: rgb(120, 120, 120);
+    border: 1px solid;
+    color: rgb(120, 120, 120);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form-section {
+    background-color: var(--color-bg2);
+    padding: 5% 0;
+}
+
+/*dispositivos pequeños: hasta de 1280 (ancho o alto, segun sea pc o dispositivo movil, con medida perpendicular de hasta 720 y correspondiente, en su mayoria, a celulares).*/
+@media only screen and (max-width: 1280px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    header>img {
+        width: 15%;
+        height: 15%;
+        margin: auto auto 5% auto;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 4px;
+        margin: 0;
+    }
+
+    #escuela>img {
+        display: flex;
+        border: 5px var(--border-color);
+
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .arriba {
+        position: fixed;
+        bottom: 10%;
+        right: 2%;
+    }
+
+    .institucional {
+        padding: 10% 0;
+    }
+
+    .autoridades {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .autoridades>div {
+        border: 2px var(--border-color);
+        margin: 2%;
+        padding: 5%;
+    }
+
+    iframe {
+        width: 90%;
+        height: 400px
+    }
+
+    .noticias {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        gap: 2%;
+
+
+    }
+
+
+    aside {
+        padding: 10% 2% 30%;
+        margin-bottom: 5%;
+        overflow-y: auto;
+    }
+
+    #mail {
+        overflow-y: auto;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+/*dispositivos medianos: desde 1280 hasta 1920 (ancho o alto, segun sea pc o dispositivo movil, con medida perpendicular de hasta 1080, correspondiente, en su mayoria a la pc).*/
+@media only screen and (min-width: 1281px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 5px;
+        margin: 0 10%;
+    }
+
+    main {
+        margin: 0 10%;
+    }
+
+    .autoridades {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .autoridades>div {
+        border: 2px var(--border-color);
+        margin: 1%;
+        padding: 5%;
+    }
+
+    .autoridades>h3,
+    #director {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    iframe {
+        width: 90%;
+        height: 400px;
+    }
+
+    .noticias {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 2%;
+    }
+
+    aside {
+        padding: 10%;
+        margin-bottom: -5%;
+    }
+}
+
+/*dispositivos grandes: mas de 1920 (ancho o alto, segun sea pc o dispositivo movil, con medidas perpendiculares variables, que superan los 2560, correspondiente, en su mayoria, a las tablets).*/
+@media only screen and (min-width: 1921px) {
+    body {
+        margin: 0 15%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    .noticias {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 5%;
+    }
+
+    aside {
+        padding: 15%;
+        margin-bottom: -5%;
+    }
+
+
+}
+
+.loginalumno {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"] {
+    background-color: #d9534f;
+}
+
+input[type="button"]:hover {
+    background-color: #c9302c;
+}
+
+input[id="entrar"] {
+    background-color: #5cb85c;
+}
+
+input[id="entrar"]:hover {
+    background-color: #4cae4c;
+}
