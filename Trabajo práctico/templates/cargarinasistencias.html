@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/campus.css">
+    <title>Carga inasistencias - Escuela San Jorge</title>
+</head>
+
+<body>
+    <a href="campusvirtualdocentes.html" id="volver">Volver atrás</a>
+    <div>
+        <div class="carga-inasistencias">
+            <fieldset class="cargarinasistencias">
+                <legend>Cargas inasistencias</legend>
+                <form action="#">
+                    <label for="alumnos">Alumnos:</label>
+                    <select id="alumnos">
+                        <option value="seleccion">Selecciona un alumno</option>
+                        <option value="alumno-1">Talavera Gonzalo</option>
+                        <option value="Alumno-2">Victoria Vázquez Freire</option>
+                        <option value="Alumno-3">Edgardo Emiliano Acosta Villegas</option>
+                    </select>
+                </form>
+                <form action="#">
+                    <label for="cantidad">Cantidad:</label>
+                    <select id="cantidad">
+                        <option value="selacciona">Selecciona tipo de falta</option>
+                        <option value="alumno-1">0.25</option>
+                        <option value="Alumno-2">0.50</option>
+                        <option value="Alumno-3">1</option>
+                    </select>
+                </form>
+                <form action="#">
+                    <label for="años">Año:</label>
+                    <select id="años">
+                        <option value="selacciona">Selecciona un año</option>
+                        <option value="año-1">1er año</option>
+                        <option value="año-2">2do año</option>
+                        <option value="año-3">3er año</option>
+                        <option value="año-4">4to año</option>
+                        <option value="año-5">5to año</option>
+                        <option value="año-6">6to año</option>
+                    </select>
+                </form>
+                <form action="#">
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo">
+                        <option value="selacciona">Selecciona un tipo de falta</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="madiafalta">Media falta</option>
+                        <option value="completa">Completa</option>
+                    </select>
+                </form>
+                <form action="#">
+                    <label>Ingrese una fecha:<input type="date"></label>
+                </form>
+                <form action="#">
+                    <label for="justificada">Es Justificada:</label>
+                    <select id="justificada">
+                        <option value="selacciona">Selecciona un tipo</option>
+                        <option value="si">SI</option>
+                        <option value="no">NO</option>
+                    </select>
+                </form>
+                <form action="#">
+                    <label for="colegio">Colegio:</label>
+                    <select id="colegio">
+                        <option value="selacciona">Selecciona un colegio</option>
+                        <option value="primaria">Primario</option>
+                        <option value="secundaria">Secundario</option>
+                    </select>
+                </form>
+                <button class="enviar">Enviar</button>
+            </fieldset>
+        </div>
+        <div class="tabla-padre">
+            <table>
+                <tr>
+                    <th>Alumno</th>
+                    <th>Cantidad</th>
+                    <th>Año</th>
+                    <th>Tipo</th>
+                    <th>Fecha</th>
+                    <th>Justificada</th>
+                    <th>Colegio</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
